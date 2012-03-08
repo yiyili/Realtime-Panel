@@ -6,7 +6,11 @@ import org.eclipse.ui.IPerspectiveFactory;
 public class Perspective implements IPerspectiveFactory {
 
 	public void createInitialLayout(IPageLayout layout) {
-		String str = layout.getEditorArea();
-		layout.addView("oraclePlugin.PaneView", IPageLayout.LEFT, 50f, str);
+		String editorArea = layout.getEditorArea();
+		layout.setEditorAreaVisible(false);
+//		layout.setFixed(true);
+		layout.addStandaloneView("oraclePlugin.PaneView",  true, IPageLayout.LEFT, 1.0f, editorArea);		
+//		layout.addView("oraclePlugin.PaneView", IPageLayout.TOP,
+//				IPageLayout.RATIO_MAX, IPageLayout.ID_EDITOR_AREA);
 	}
 }

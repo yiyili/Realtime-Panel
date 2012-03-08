@@ -50,5 +50,18 @@
          </menu>
       </actionSet>
    </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               id="oraclePlugin.PaneView"
+               minimized="false"
+               ratio="0.95f"
+               relationship="top"
+               relative="org.eclipse.ui.editorss">
+         </view>
+      </perspectiveExtension>
+   </extension>
 
 </plugin>

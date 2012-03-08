@@ -24,7 +24,6 @@ public class CustonmerAction implements IWorkbenchWindowActionDelegate {
 	public void run(IAction action) {
 		// TODO Auto-generated method stub
 		try {
-			System.out.println("action run");
 			window.getActivePage().showView("oraclePlugin.PaneView");
 		} catch (PartInitException e) {
 			// TODO Auto-generated catch block
@@ -38,7 +37,6 @@ public class CustonmerAction implements IWorkbenchWindowActionDelegate {
 	@Override
 	public void selectionChanged(IAction action, ISelection selection) {
 		// TODO Auto-generated method stub
-		System.out.println("selection:" + selection.toString());
 	}
 
 	/* (non-Javadoc)

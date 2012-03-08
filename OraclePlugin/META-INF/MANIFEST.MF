@@ -8,3 +8,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: .,
+ lib/RealOracle2.1.jar,
+ lib/jfxrt.jar
+Export-Package: javafx.scene,
+ realoracle
